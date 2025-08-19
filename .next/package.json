@@ -1,7 +1,1 @@
-{
-  "type": "commonjs",
-  "scripts": {
-    "build": "next build",
-    "postbuild": "netlify-next"
-  }
-}
+{"type": "commonjs"}

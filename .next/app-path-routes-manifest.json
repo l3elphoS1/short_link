@@ -1,6 +1,6 @@
 {
   "/_not-found/page": "/_not-found",
-  "/api/shorten/route": "/api/shorten",
   "/favicon.ico/route": "/favicon.ico",
+  "/api/shorten/route": "/api/shorten",
   "/page": "/"
 }
