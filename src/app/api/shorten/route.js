@@ -5,7 +5,14 @@ const AIRTABLE_TABLE_NAME = process.env.AIRTABLE_TABLE_NAME;
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
 
 function generateCode() {
-  return Math.random().toString(36).substring(2, 8);
+  const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const codeLength = 6;
+  let result = "";
+  for (let i = 0; i < codeLength; i++) {
+    const idx = Math.floor(Math.random() * alphabet.length);
+    result += alphabet[idx];
+  }
+  return result;
 }
 
 export async function POST(req) {
@@ -35,6 +42,6 @@ export async function POST(req) {
   }
 
   return NextResponse.json({
-    shortUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/${shortCode}`,
+    shortUrl: `${process.env.NEXT_PUBLIC_BASE_URL || ""}/${shortCode}`.replace(/\/?$/, "").replace(/\/\//g, "/"),
   });
 }

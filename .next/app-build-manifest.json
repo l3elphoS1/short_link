@@ -12,7 +12,7 @@
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-4542b6435bd81c5b.js",
       "static/chunks/main-app-739446143921f72f.js",
-      "static/css/a314919fc94c0272.css",
+      "static/css/1de05bc4ce9e1b6e.css",
       "static/chunks/app/layout-589eb650285b45b9.js"
     ],
     "/api/shorten/route": [
@@ -20,7 +20,14 @@
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-4542b6435bd81c5b.js",
       "static/chunks/main-app-739446143921f72f.js",
-      "static/chunks/app/api/shorten/route-8f39744b081f1391.js"
+      "static/chunks/app/api/shorten/route-37455f979ef03a1e.js"
+    ],
+    "/[code]/page": [
+      "static/chunks/webpack-de758614466bbdd3.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-4542b6435bd81c5b.js",
+      "static/chunks/main-app-739446143921f72f.js",
+      "static/chunks/app/[code]/page-37455f979ef03a1e.js"
     ],
     "/page": [
       "static/chunks/webpack-de758614466bbdd3.js",
