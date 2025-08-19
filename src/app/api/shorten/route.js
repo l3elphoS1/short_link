@@ -41,7 +41,10 @@ export async function POST(req) {
     return NextResponse.json({ error: data }, { status: 400 });
   }
 
-  return NextResponse.json({
-    shortUrl: `${process.env.NEXT_PUBLIC_BASE_URL || ""}/${shortCode}`.replace(/\/?$/, "").replace(/\/\//g, "/"),
-  });
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "";
+  const baseNormalized = base ? base.replace(/\/$/, "") : "";
+  const shortPath = `/${shortCode}`;
+  const shortUrl = baseNormalized ? `${baseNormalized}${shortPath}` : shortPath;
+
+  return NextResponse.json({ shortUrl });
 }
